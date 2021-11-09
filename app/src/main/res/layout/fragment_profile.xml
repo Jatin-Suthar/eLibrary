@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        >
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/card_4"
+            android:layout_alignParentLeft="true"
+            android:padding="5dp"
+            android:src="@drawable/ic_back_btn"
+            app:tint="@color/black" />
+
+        <ImageView
+            android:id="@+id/logout_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/card_3"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_logout"
+            android:padding="5dp"
+            app:tint="@color/black"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USER PROFILE"
+            android:textColor="@color/black"
+            android:padding="3dp"
+            android:textSize="34dp"
+            android:elevation="8dp"
+            android:id="@+id/profile1"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/potta"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:background="@drawable/card_1"
+            android:layout_alignParentLeft="true"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/greenBook"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_book"
+                android:layout_gravity="center_horizontal"
+                app:tint="#63BC14"
+                />
+
+            <TextView
+                android:id="@+id/issueBooksText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="LastIssue"
+                android:textSize="24dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:fontFamily="@font/abrilla"
+                />
+
+            <TextView
+                android:id="@+id/numberIssue"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:text="00/00/0000"
+                android:textSize="14dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:fontFamily="@font/abrilla"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:background="@drawable/card_2"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:id="@+id/redBook"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/ic_book"
+                android:layout_gravity="center_horizontal"
+                app:tint="#E33E14"
+                />
+
+            <TextView
+                android:id="@+id/returnBooksText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="LastReturn"
+                android:textSize="24dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:fontFamily="@font/abrilla"
+                />
+
+            <TextView
+                android:id="@+id/numberReturn"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:inputType="text"
+                android:fontFamily="@font/abrilla"
+                android:text="00/00/0000"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:background="@drawable/card_6"
+        android:elevation="8dp"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="15dp"
+            android:src="@drawable/ic_person"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/profile1ImageView"
+            app:tint="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Person Name"
+            android:fontFamily="@font/sofia"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:padding="16dp"
+            android:layout_toRightOf="@+id/profile1ImageView"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:background="@drawable/card_6"
+        android:elevation="8dp"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="15dp"
+            android:src="@drawable/ic_library"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/libraryId"
+            app:tint="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/libraryText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Person Id"
+            android:fontFamily="@font/sofia"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:padding="16dp"
+            android:layout_toRightOf="@+id/libraryId"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:background="@drawable/card_6"
+        android:elevation="8dp"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="15dp"
+            android:src="@drawable/ic_emailid"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/EmailId"
+            app:tint="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Person Email"
+            android:fontFamily="@font/sofia"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:padding="16dp"
+            android:layout_toRightOf="@+id/EmailId"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:elevation="8dp"
+        android:background="@drawable/card_6"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="15dp"
+            android:src="@drawable/ic_phone"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/PhoneId"
+            app:tint="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/PhoneText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Person Phone"
+            android:fontFamily="@font/sofia"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:padding="16dp"
+            android:layout_toRightOf="@+id/PhoneId"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click on user profile to update the data"
+        android:fontFamily="@font/pacific"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/textInformation"
+        android:textColor="#950FE8"
+        />
+</LinearLayout>

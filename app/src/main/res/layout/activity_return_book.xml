@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context=".ReturnBook">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginRight="4dp"
+            android:id="@+id/image_logo"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo"
+            />
+
+        <TextView
+            android:id="@+id/return_text"
+            android:layout_width="180dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/chelaone_regular"
+            android:text=" Return Book"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:startIconDrawable="@drawable/ic_library"
+            app:startIconTint="@color/black"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black"
+            android:hint="Library Id"
+            app:hintTextColor="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidthFocused="2dp"
+            android:id="@+id/lib_id1"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:cursorVisible="true"
+                android:textStyle="bold"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:startIconDrawable="@drawable/ic_book"
+            app:startIconTint="@color/black"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black"
+            android:hint="Book Name"
+            app:hintTextColor="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidthFocused="2dp"
+            android:id="@+id/book_name1"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:cursorVisible="true"
+                android:textStyle="bold"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:startIconDrawable="@drawable/ic_date"
+            app:startIconTint="@color/black"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/black"
+            android:hint="Return Date"
+            app:hintTextColor="@color/black"
+            app:boxStrokeColor="@color/black"
+            app:boxStrokeWidthFocused="2dp"
+            android:id="@+id/return_date"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:cursorVisible="true"
+                android:textStyle="bold"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/return_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:text="update"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/black"/>
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/back_btn2"
+            android:background="@drawable/ic_back_btn"
+            app:iconTint="@color/black"
+            android:backgroundTint="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
